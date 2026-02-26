@@ -5,26 +5,26 @@ hosts:
     base_box: 
       image: kali
       mgmt_user: debian
-    flavor: standard.large
+    flavor: standard.medium
 
   - name: server
     base_box:
       image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.large
+    flavor: standard.medium
 
   - name: client
     base_box: 
       image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.large
+    flavor: standard.medium
 
 routers:
   - name: router
     base_box:
       image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.large
+    flavor: standard.medium
 
 wan:
   name: internet-connection
