@@ -3,28 +3,28 @@ name: junior-hacker-sandbox
 hosts:
   - name: attacker
     base_box: 
-      image: kali
+      image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.medium
+    flavor: standard.small
 
   - name: server
     base_box:
       image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.medium
+    flavor: standard.small
 
   - name: client
     base_box: 
       image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.medium
+    flavor: standard.small
 
 routers:
   - name: router
     base_box:
       image: debian-12-x86_64
       mgmt_user: debian
-    flavor: standard.medium
+    flavor: standard.small
 
 wan:
   name: internet-connection
